@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import './App.css'
-import PrimaryNoIcon from './Components/Buttons/PrimaryNoIcon'
-import PrimaryWithIcon from './Components/Buttons/PrimaryWithIcon'
-import SecondaryNoIcon from './Components/Buttons/SecondaryNoIcon'
-import SecondaryWithIcon from './Components/Buttons/SecondaryWithIcon'
+import PrimaryNoIcon from './Components/Shared/Buttons/PrimaryNoIcon'
+import PrimaryWithIcon from './Components/Shared/Buttons/PrimaryWithIcon'
+import SecondaryNoIcon from './Components/Shared/Buttons/SecondaryNoIcon'
+import SecondaryWithIcon from './Components/Shared/Buttons/SecondaryWithIcon'
+import Sidebar from './Components/AppComponents/Sidebar'
 import HomeIcon from './Assets/Icons/home.svg'
 import HomeBlueIcon from './Assets/Icons/HomeBlue.svg'
 
-function App() {
+function Test() {
 
   return (
-    <div className='flex gap-x-4'>  
+    <div className='w-full h-full flex gap-x-4 justify-center items-center'>  
       <PrimaryNoIcon 
         content='Button'
       />
@@ -29,4 +30,12 @@ function App() {
   )
 }
 
-export default App
+function App() {
+  return (
+    <div className='w-full h-full flex'>  
+      <Sidebar />
+    </div>
+  )
+}
+
+export default Test

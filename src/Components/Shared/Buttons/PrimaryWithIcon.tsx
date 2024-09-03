@@ -1,6 +1,6 @@
 import React from 'react'
-import '../../Styles/Fonts.css'
-import '../../Styles/Shadows.css'
+import '../../../Styles/Fonts.css'
+import '../../../Styles/Shadows.css'
 
 type PrimaryWithIconProps = {
     content: string;

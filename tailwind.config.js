@@ -17,6 +17,8 @@ export default {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        kanit: ['Kanit', 'sans-serif'],
+        lato: ['Lato', 'sans-serif']
       },
       colors: {
         CustomText: {
