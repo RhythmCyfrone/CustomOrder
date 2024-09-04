@@ -4,9 +4,10 @@ import PrimaryNoIcon from './Components/Shared/Buttons/PrimaryNoIcon'
 import PrimaryWithIcon from './Components/Shared/Buttons/PrimaryWithIcon'
 import SecondaryNoIcon from './Components/Shared/Buttons/SecondaryNoIcon'
 import SecondaryWithIcon from './Components/Shared/Buttons/SecondaryWithIcon'
-import Sidebar from './Components/AppComponents/Sidebar'
+import Sidebar from './Components/AppComponents/Sidebar/Sidebar'
 import HomeIcon from './Assets/Icons/home.svg'
 import HomeBlueIcon from './Assets/Icons/HomeBlue.svg'
+import TableSelected from './Components/AppComponents/TableSelected/TableSelected'
 
 function Test() {
 
@@ -34,8 +35,12 @@ function App() {
   return (
     <div className='w-full h-full flex'>  
       <Sidebar />
+      <div className='flex-1'>
+
+      </div>
+      <TableSelected />
     </div>
   )
 }
 
-export default Test
+export default App

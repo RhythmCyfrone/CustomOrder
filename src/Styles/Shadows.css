@@ -12,3 +12,6 @@ ShadowPrimaryHover {
 .shadow-sidebar {
     box-shadow: 4px 4px 20px 0px #4CB7FF40;
 }
+.shadow-table-selected {
+    box-shadow: -3px 4px 20px 0px #4CB7FF40;
+}
