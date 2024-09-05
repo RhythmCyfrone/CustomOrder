@@ -10,36 +10,17 @@ import HomeBlueIcon from './Assets/Icons/HomeBlue.svg'
 import TableSelected from './Components/AppComponents/TableSelected/TableSelected'
 import Table from './Components/AppComponents/Table/Table'
 import OrderTypeBar from './Components/AppComponents/OrderType/OrderType'
+import FloorNavbar from './Components/AppComponents/FloorNavbar/FloorNavbar'
 
-function Test() {
-
-  return (
-    <div className='w-full h-full flex gap-x-4 justify-center items-center'>  
-      <PrimaryNoIcon 
-        content='Button'
-      />
-      <PrimaryWithIcon
-        content='Button'
-        iconSrc={HomeIcon}
-      />
-      <SecondaryNoIcon
-        content='Button'
-      />
-      <SecondaryWithIcon
-        content='Button'
-        iconSrc={HomeBlueIcon}
-      />
-    </div>
-  )
-}
 
 function App() {
   return (
     <div className='w-full h-full flex'>  
       <Sidebar />
       <div className='flex-1 flex'>
-        <div className='flex-1 flex flex-col gap-y-[16px] pt-[34px] pb-[34px] ms-[80px]'>
+        <div className='flex-1 flex flex-col gap-y-[24px] pt-[34px] pb-[34px] ms-[80px]'>
           <OrderTypeBar />
+          <FloorNavbar />
           <div className='flex gap-x-[61px] gap-y-[20px]  flex-wrap'>
             <Table status='Free' floor='1' tableNumber='A1' time='30 mins' occupancy={2} />
             <Table status='Free' floor='1' tableNumber='A2' time='30 mins' occupancy={2} />
@@ -60,8 +41,6 @@ function App() {
             <Table status='Free' floor='1' tableNumber='A17' time='30 mins' occupancy={2} />
             <Table status='Generate Bill' floor='1' tableNumber='A18' time='30 mins' occupancy={2} />
             <Table status='Free' floor='1' tableNumber='A19' time='30 mins' occupancy={2} />
-
-
           </div>
         </div>
         <TableSelected />

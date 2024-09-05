@@ -2,12 +2,14 @@ import { configureStore } from '@reduxjs/toolkit'
 import sidebarReducer from '../Components/AppComponents/Sidebar/sidebarSlice'
 import tableReducer from '../Components/AppComponents/Table/TableSlice'
 import orderTypeReducer from '../Components/AppComponents/OrderType/orderTypeSlice'
+import floorReducer from '../Components/AppComponents/FloorNavbar/floorSlice'
 
 export const store = configureStore({
   reducer: {
     sidebar: sidebarReducer,
     tableSelect: tableReducer,
-    orderType: orderTypeReducer 
+    orderType: orderTypeReducer,
+    floor: floorReducer
   }
 })
 

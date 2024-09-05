@@ -60,10 +60,10 @@ const Table = ({status, floor, tableNumber, time, occupancy}: TableProps) => {
                     <span className='font-opensans font-normal text-[12px]'>{occupancy}</span>
                 </div>
                 <div className='flex flex-col pt-[4px]'>
-                    <div className='font-opensans font-semibold text-[24px] leading-[32.68px] text-white'>
+                    <div className='font-opensans font-medium text-[24px] leading-[32.68px] text-white'>
                         {tableNumber}
                     </div>
-                    <div className={`font-opensans font-semibold text-[14px] leading-[21.79px] text-white`}>
+                    <div className={`font-opensans font-medium text-[15px] leading-[21.79px] text-white`}>
                         {status}
                     </div>
                 </div>  
@@ -76,10 +76,10 @@ const Table = ({status, floor, tableNumber, time, occupancy}: TableProps) => {
                     <span className='font-opensans font-normal text-[12px] text-CustomText-200'>{occupancy}</span>
                 </div>
                 <div className='flex flex-col pt-[4px]'>
-                    <div className='font-opensans font-semibold text-[24px] leading-[32.68px]'>
+                    <div className='font-opensans font-medium text-[24px] leading-[32.68px]'>
                         {tableNumber}
                     </div>
-                    <div className={`font-opensans font-semibold text-[14px] leading-[21.79px] ${statusColorText}`}>
+                    <div className={`font-opensans font-medium text-[15px] leading-[21.79px] ${statusColorText}`}>
                         {status}
                     </div>
                 </div>  
