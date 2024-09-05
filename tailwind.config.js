@@ -18,7 +18,8 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         kanit: ['Kanit', 'sans-serif'],
-        lato: ['Lato', 'sans-serif']
+        lato: ['Lato', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif'],
       },
       colors: {
         CustomText: {
@@ -36,6 +37,18 @@ export default {
           300: '#BFBFBF',
           200: '#EF1F1F1',
           100: '#FFFFFF'
+        },
+        free: '#87CEED',
+        TableStatus: {
+          free: '#87CEED',
+          reserved: '#FFB800',
+          assigned: '#3B82F6',
+          confirmed: '#FFFF00',
+          preparing: '#FFA500',
+          ready: '#AD00FF',
+          served: '#00D930',
+          bill: '#A1007E',
+          completed: '#40E0D0'
         }
       },
     },
