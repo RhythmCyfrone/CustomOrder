@@ -1,16 +1,12 @@
 import { useState } from 'react'
 import './App.css'
-import PrimaryNoIcon from './Components/Shared/Buttons/PrimaryNoIcon'
-import PrimaryWithIcon from './Components/Shared/Buttons/PrimaryWithIcon'
-import SecondaryNoIcon from './Components/Shared/Buttons/SecondaryNoIcon'
-import SecondaryWithIcon from './Components/Shared/Buttons/SecondaryWithIcon'
 import Sidebar from './Components/AppComponents/Sidebar/Sidebar'
-import HomeIcon from './Assets/Icons/home.svg'
-import HomeBlueIcon from './Assets/Icons/HomeBlue.svg'
 import TableSelected from './Components/AppComponents/TableSelected/TableSelected'
 import Table from './Components/AppComponents/Table/Table'
 import OrderTypeBar from './Components/AppComponents/OrderType/OrderType'
 import FloorNavbar from './Components/AppComponents/FloorNavbar/FloorNavbar'
+import SeachNavbar from './Components/AppComponents/SearchNavbar/SeachNavbar'
+import TableSelectorNavbar from './Components/AppComponents/TableSelectorNavbar/TableSelectorNavbar'
 
 
 function App() {
@@ -18,9 +14,13 @@ function App() {
     <div className='w-full h-full flex'>  
       <Sidebar />
       <div className='flex-1 flex'>
-        <div className='flex-1 flex flex-col gap-y-[24px] pt-[34px] pb-[34px] ms-[80px]'>
+        <div className='flex-1 flex flex-col gap-y-[24px] pt-[34px] pb-[34px] ms-[80px] me-[40px]'>
           <OrderTypeBar />
-          <FloorNavbar />
+          <div className='flex justify-between items-center'>
+            <FloorNavbar />
+            <SeachNavbar />
+          </div>
+          <TableSelectorNavbar />
           <div className='flex gap-x-[61px] gap-y-[20px]  flex-wrap'>
             <Table status='Free' floor='1' tableNumber='A1' time='30 mins' occupancy={2} />
             <Table status='Free' floor='1' tableNumber='A2' time='30 mins' occupancy={2} />

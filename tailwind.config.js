@@ -22,6 +22,7 @@ export default {
         opensans: ['Open Sans', 'sans-serif'],
       },
       colors: {
+        black: '#292929',
         CustomText: {
           300: '#292929',
           200: '#757575',

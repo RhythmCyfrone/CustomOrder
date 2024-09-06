@@ -22,7 +22,7 @@ const OrderTypeButton = ({buttonType}: {buttonType:  OrderType}) => {
                     ?<img src={LunchBagIcon} />
                     :<img src={DeliveryBoxIcon} />
                 }
-                <span className='font-opensans text-nowrap font-normal text-[14px] text-CustomBrand-300'>{buttonType}</span>
+                <span className='font-poppins text-nowrap font-normal text-[14px] text-CustomBrand-300'>{buttonType}</span>
                 {buttonType == 'Dine-in'
                 ?<div className='bg-[#FFD700] rounded-[3px] p-[2px] ps-[4px] pe-[4px] text-[12px]'>
                     12
@@ -31,7 +31,8 @@ const OrderTypeButton = ({buttonType}: {buttonType:  OrderType}) => {
                 }
             </div>
             :
-            <div className='flex gap-x-[8px] rounded-[1px] cursor-pointer p-[4px] justify-center items-center'
+            <div className='flex gap-x-[8px] rounded-[1px] cursor-pointer p-[4px] justify-center items-center
+                            hover:text-CustomBrand-300 hover:ShadowOrderButtonHover'
                 onClick={() => dispatch(selectOrderType(buttonType))}
             >
                 {
@@ -41,7 +42,7 @@ const OrderTypeButton = ({buttonType}: {buttonType:  OrderType}) => {
                     ?<img src={LunchBagIcon} />
                     :<img src={DeliveryBoxIcon} />
                 }
-                <span className='font-opensans font-normal text-[14px]'>{buttonType}</span>
+                <span className='font-poppins font-normal text-[14px]'>{buttonType}</span>
             </div> 
     )
 
