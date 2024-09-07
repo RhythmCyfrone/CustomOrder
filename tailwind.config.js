@@ -20,6 +20,7 @@ export default {
         kanit: ['Kanit', 'sans-serif'],
         lato: ['Lato', 'sans-serif'],
         opensans: ['Open Sans', 'sans-serif'],
+        quicksand: ['Quicksand', 'sans-serif'],
       },
       colors: {
         black: '#292929',

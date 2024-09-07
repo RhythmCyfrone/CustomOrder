@@ -1,5 +1,5 @@
 .fontButtonDefault {
-    @apply font-poppins tablet:text-[16px] mobile:text-[12px] font-semibold leading-[24px] tracking-[0.02em] text-left text-CustomNeutral-100;
+    @apply font-poppins tablet:text-[16px] mobile:text-[12px] font-medium leading-[24px] tracking-[0.02em] text-left text-CustomNeutral-100;
 }
 
 .fontSecondaryButtonDefault {
